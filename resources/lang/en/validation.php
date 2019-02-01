@@ -193,8 +193,17 @@ return [
                     'timezone' => 'Timezone',
                     'language' => 'Language'
                 ]
-            ]
+            ],
 
+            //start_Test_start
+            'tests' => [
+                'id' => "Id",
+                'name|50' => "Name",
+                'l_name2' => "Last Name2",
+                'email' => "Email",
+                'sms' => "SMS"
+            ]
+            //end_Test_end
             // Do not delete me :) I'm used for auto-generation
         ],
 
