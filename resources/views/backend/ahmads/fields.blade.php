@@ -19,6 +19,23 @@
         </div><!--form-group-->
         
         <div class="form-group row">
+            {{ html()->label(__('validation.attributes.backend.ahmads.first_id'))->class('col-md-2 form-control-label')->for('first_id') }}
+            <div class="col-md-10">
+                
+                    <select class="form-control m-bot15" name="first_id"  required  >
+                         <option value="">select...</option>
+                        @if  ($firsts->count())
+                        @foreach($firsts as $temp)
+                                <option value="{{ $temp->id }}" {{ isset($ahmad->first_id)&& $ahmad->first_id == $temp->id ? 'selected="selected"' : '' }}>{{ $temp->name }}</option>
+                        @endforeach
+                        @endif
+                    </select>
+                
+
+            </div><!--col-->
+        </div><!--form-group-->
+        
+        <div class="form-group row">
             {{ html()->label(__('validation.attributes.backend.ahmads.l_name'))->class('col-md-2 form-control-label')->for('l_name') }}
             <div class="col-md-10">
                 

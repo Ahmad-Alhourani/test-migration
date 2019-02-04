@@ -32,6 +32,8 @@ class UpdateAhmad extends FormRequest
 
             'name' => 'required',
 
+            'first_id' => 'required',
+
             'l_name' => 'nullable',
 
             'email' => 'required',

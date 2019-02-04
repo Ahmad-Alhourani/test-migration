@@ -16,14 +16,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//start_Ahmad_start
-Route::resource('ahmad', 'API\AhmadAPIController');
-
-//end_Ahmad_end
-
 //start_First_start
 Route::resource('first', 'API\FirstAPIController');
 
 //end_First_end
+
+//start_Ahmad_start
+Route::resource('ahmad', 'API\AhmadAPIController');
+
+//end_Ahmad_end
 
 //*****Do Not Delete Me

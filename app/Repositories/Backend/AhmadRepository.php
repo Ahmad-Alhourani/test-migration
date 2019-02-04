@@ -13,7 +13,7 @@ class AhmadRepository extends BaseRepository implements CacheableInterface
     protected $defaultOrderBy = 'id';
     protected $defaultSortBy = 'asc';
 
-    protected $fieldSearchable = ["name", "l_name"];
+    protected $fieldSearchable = ["name", "first_id", "l_name"];
 
     /**
      * Configure the Model
