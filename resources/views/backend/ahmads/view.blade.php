@@ -23,26 +23,6 @@
          </div><!--form-group-->
          
             <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.ahmads.name7'))->class('col-md-2 form-control-label')->for('name7') }}
-            <div class="col-md-10">
-       
-
-                {{ $ahmad->name7 }}
-
-            </div><!--col-->
-         </div><!--form-group-->
-         
-            <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.ahmads.name5'))->class('col-md-2 form-control-label')->for('name5') }}
-            <div class="col-md-10">
-       
-
-                {{ $ahmad->name5 }}
-
-            </div><!--col-->
-         </div><!--form-group-->
-         
-            <div class="form-group row">
             {{ html()->label(__('validation.attributes.backend.ahmads.l_name'))->class('col-md-2 form-control-label')->for('l_name') }}
             <div class="col-md-10">
        

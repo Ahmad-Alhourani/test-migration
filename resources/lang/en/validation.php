@@ -205,12 +205,11 @@ return [
                 'sms' => "SMS"
             ],
             //end_Test_end
+
             //start_Ahmad_start
             'ahmads' => [
                 'id' => "Id",
                 'name' => "Name",
-                'name7' => "Name7",
-                'name5' => "Name5",
                 'l_name' => "Last Name",
                 'email' => "Email",
                 'sms' => "SMS"

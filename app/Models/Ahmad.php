@@ -40,7 +40,7 @@ class Ahmad extends Model
      * @var array
      */
 
-    protected $sortable = ["id", "name", "name7", "name5", "l_name", "email"];
+    protected $sortable = ["id", "name", "l_name", "email"];
 
     /**
      * The attributes that are mass assignable.
@@ -48,7 +48,7 @@ class Ahmad extends Model
      * @var array
      */
 
-    protected $fillable = ["name", "name7", "name5", "l_name", "email", "sms"];
+    protected $fillable = ["name", "l_name", "email", "sms"];
 
     public $timestamps = ["create_at", "update_at"];
 
