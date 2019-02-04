@@ -48,25 +48,14 @@ return [
             'history' => 'History',
             'system' => 'System',
 
-            //begin_Ahmad_begin
-            'ahmads' => ' Ahmads',
-            //finish_Ahmad_finish
             //begin_Test_begin
-            'tests' => ' Tests'
+            'tests' => ' Tests',
             //finish_Test_finish
+            //begin_Ahmad_begin
+            'ahmads' => ' Ahmads'
+            //finish_Ahmad_finish
             // **********Do_Not_Delete_me****************
         ],
-
-        //start_Ahmad_start
-        'ahmads' => [
-            'view' => 'View Ahmad',
-            'all' => 'All  Ahmads',
-            'create' => 'Create Ahmad',
-            'edit' => 'Edit Ahmad',
-            'management' => 'Ahmad Management',
-            'main' => ' Ahmads'
-        ],
-        //end_Ahmad_end
 
         //start_Test_start
         'tests' => [
@@ -76,8 +65,19 @@ return [
             'edit' => 'Edit Test',
             'management' => 'Test Management',
             'main' => ' Tests'
-        ]
+        ],
         //end_Test_end
+
+        //start_Ahmad_start
+        'ahmads' => [
+            'view' => 'View Ahmad',
+            'all' => 'All  Ahmads',
+            'create' => 'Create Ahmad',
+            'edit' => 'Edit Ahmad',
+            'management' => 'Ahmad Management',
+            'main' => ' Ahmads'
+        ]
+        //end_Ahmad_end
 
         // Do not delete me :) I'm used for auto-generation
     ],

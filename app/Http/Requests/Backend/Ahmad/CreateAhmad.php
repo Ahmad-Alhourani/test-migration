@@ -32,6 +32,8 @@ class CreateAhmad extends FormRequest
 
             'name' => 'required',
 
+            'test_id' => 'required',
+
             'l_name' => 'nullable',
 
             'email' => 'required',

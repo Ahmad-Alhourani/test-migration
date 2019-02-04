@@ -48,7 +48,7 @@ class Ahmad extends Model
      * @var array
      */
 
-    protected $fillable = ["name", "l_name", "email", "sms"];
+    protected $fillable = ["name", "test_id", "l_name", "email", "sms"];
 
     public $timestamps = ["create_at", "update_at"];
 
@@ -82,6 +82,15 @@ class Ahmad extends Model
     // ************************ RELATIONS ************************
     // ***********************************************************
     // ***********************************************************
+
+    /**
+     * Get  the Test that owns the Ahmad.
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function test()
+    {
+        return $this->belongsTo(Test::class);
+    }
 
     // ***********************************************************
     // ***********************************************************

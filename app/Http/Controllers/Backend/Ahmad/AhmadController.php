@@ -14,6 +14,8 @@ use App\Events\Backend\Ahmad\AhmadDeleted;
 use Prettus\Repository\Criteria\RequestCriteria;
 use App\Models\Ahmad;
 
+use App\Models\Test;
+
 class AhmadController extends Controller
 {
     /** @var $ahmadRepository */
@@ -47,7 +49,10 @@ class AhmadController extends Controller
      */
     public function create()
     {
-        return view('backend.ahmads.create');
+        $tests = Test::all();
+        $selectedTest = Test::first() ? Test::first()->_id : 0;
+
+        return view('backend.ahmads.create', compact("tests", "selectedTest"));
     }
 
     /**
@@ -61,7 +66,7 @@ class AhmadController extends Controller
     public function store(CreateAhmad $request)
     {
         $obj = $this->ahmadRepository->create(
-            $request->only(["name", "l_name", "email", "sms"])
+            $request->only(["name", "test_id", "l_name", "email", "sms"])
         );
 
         event(new AhmadCreated($obj));
@@ -93,7 +98,13 @@ class AhmadController extends Controller
      */
     public function edit(Ahmad $ahmad)
     {
-        return view('backend.ahmads.edit')->with('ahmad', $ahmad);
+        $tests = Test::all();
+        $selectedTest = $ahmad->test_id;
+
+        return view(
+            'backend.ahmads.edit',
+            compact("tests", "selectedTest")
+        )->with('ahmad', $ahmad);
     }
 
     /**
