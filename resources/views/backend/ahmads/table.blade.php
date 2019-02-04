@@ -5,10 +5,6 @@
                 
                  <th>@sortablelink('name', trans('labels.backend.ahmads.table.name')) </th>
                 
-                 <th>@sortablelink('name7', trans('labels.backend.ahmads.table.name7')) </th>
-                
-                 <th>@sortablelink('name5', trans('labels.backend.ahmads.table.name5')) </th>
-                
                  <th>@sortablelink('l_name', trans('labels.backend.ahmads.table.l_name')) </th>
                 
                  <th>@sortablelink('email', trans('labels.backend.ahmads.table.email')) </th>
@@ -23,8 +19,6 @@
         <tr>
              
                 <td>{{  $ahmad->name }}</td>  
-                <td>{{  $ahmad->name7 }}</td>  
-                <td>{{  $ahmad->name5 }}</td>  
                 <td>{{  $ahmad->l_name }}</td>  
                 <td>{{  $ahmad->email }}</td>  
                 <td>{{  $ahmad->sms }}</td>  
