@@ -195,17 +195,6 @@ return [
                 ]
             ],
 
-            //start_Test_start
-            'tests' => [
-                'id' => "Id",
-                'name' => "Name",
-                'name5' => "Name5",
-                'l_name' => "Last Name",
-                'email' => "Email",
-                'sms' => "SMS"
-            ],
-            //end_Test_end
-
             //start_Ahmad_start
             'ahmads' => [
                 'id' => "Id",
@@ -213,8 +202,18 @@ return [
                 'l_name' => "Last Name",
                 'email' => "Email",
                 'sms' => "SMS"
-            ]
+            ],
             //end_Ahmad_end
+            //start_Test_start
+            'tests' => [
+                'id' => "Id",
+                'name' => "Name",
+                'l_name' => "Last Name",
+                'email' => "Email",
+                'des' => "Des",
+                'sms' => "SMS"
+            ]
+            //end_Test_end
             // Do not delete me :) I'm used for auto-generation
         ],
 

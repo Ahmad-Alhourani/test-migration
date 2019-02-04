@@ -61,7 +61,7 @@ class TestController extends Controller
     public function store(CreateTest $request)
     {
         $obj = $this->testRepository->create(
-            $request->only(["name", "name5", "l_name", "email", "sms"])
+            $request->only(["name", "l_name", "email", "des", "sms"])
         );
 
         event(new TestCreated($obj));

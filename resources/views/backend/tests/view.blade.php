@@ -23,16 +23,6 @@
          </div><!--form-group-->
          
             <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.tests.name5'))->class('col-md-2 form-control-label')->for('name5') }}
-            <div class="col-md-10">
-       
-
-                {{ $test->name5 }}
-
-            </div><!--col-->
-         </div><!--form-group-->
-         
-            <div class="form-group row">
             {{ html()->label(__('validation.attributes.backend.tests.l_name'))->class('col-md-2 form-control-label')->for('l_name') }}
             <div class="col-md-10">
        
@@ -48,6 +38,16 @@
        
 
                 {{ $test->email }}
+
+            </div><!--col-->
+         </div><!--form-group-->
+         
+            <div class="form-group row">
+            {{ html()->label(__('validation.attributes.backend.tests.des'))->class('col-md-2 form-control-label')->for('des') }}
+            <div class="col-md-10">
+       
+
+                {{ $test->des }}
 
             </div><!--col-->
          </div><!--form-group-->

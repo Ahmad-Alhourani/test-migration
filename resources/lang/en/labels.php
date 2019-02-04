@@ -114,32 +114,6 @@ return [
             ]
         ],
 
-        //start_Test_start
-        'tests' => [
-            'management' => ' Tests Management',
-            'create' => 'Create Test',
-            'view' => 'View Test',
-            'edit' => 'Edit Test',
-
-            'table' => [
-                'id' => "Id",
-                'name' => "Name",
-                'name5' => "Name5",
-                'l_name' => "Last Name",
-                'email' => "Email",
-                'sms' => "SMS",
-                'sort' => 'Sort',
-                'total' => ' Tests total| Tests total'
-            ],
-
-            'content' => [
-                'created_at' => 'Created At',
-                'deleted_at' => 'Deleted At',
-                'last_updated' => 'Last Update'
-            ]
-        ],
-        //end_Test_end
-
         //start_Ahmad_start
         'ahmads' => [
             'management' => ' Ahmads Management',
@@ -162,8 +136,34 @@ return [
                 'deleted_at' => 'Deleted At',
                 'last_updated' => 'Last Update'
             ]
-        ]
+        ],
         //end_Ahmad_end
+
+        //start_Test_start
+        'tests' => [
+            'management' => ' Tests Management',
+            'create' => 'Create Test',
+            'view' => 'View Test',
+            'edit' => 'Edit Test',
+
+            'table' => [
+                'id' => "Id",
+                'name' => "Name",
+                'l_name' => "Last Name",
+                'email' => "Email",
+                'des' => "Des",
+                'sms' => "SMS",
+                'sort' => 'Sort',
+                'total' => ' Tests total| Tests total'
+            ],
+
+            'content' => [
+                'created_at' => 'Created At',
+                'deleted_at' => 'Deleted At',
+                'last_updated' => 'Last Update'
+            ]
+        ]
+        //end_Test_end
 
         // Do not delete me :) I'm used for auto-generation
     ],

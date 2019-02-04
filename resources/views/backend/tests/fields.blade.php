@@ -19,23 +19,6 @@
         </div><!--form-group-->
         
         <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.tests.name5'))->class('col-md-2 form-control-label')->for('name5') }}
-            <div class="col-md-10">
-                
-                        {{ html()->text('name5')
-                        ->class('form-control')
-                        ->placeholder(__('validation.attributes.backend.tests.name5'))
-                        
-                        
-                      
-                            ->required() 
-                         }}
-                
-
-            </div><!--col-->
-        </div><!--form-group-->
-        
-        <div class="form-group row">
             {{ html()->label(__('validation.attributes.backend.tests.l_name'))->class('col-md-2 form-control-label')->for('l_name') }}
             <div class="col-md-10">
                 
@@ -62,6 +45,22 @@
                         
                       
                             ->required() 
+                         }}
+                
+
+            </div><!--col-->
+        </div><!--form-group-->
+        
+        <div class="form-group row">
+            {{ html()->label(__('validation.attributes.backend.tests.des'))->class('col-md-2 form-control-label')->for('des') }}
+            <div class="col-md-10">
+                
+                        {{ html()->textarea('des')
+                        ->class('form-control')
+                        ->placeholder(__('validation.attributes.backend.tests.des'))
+                        
+                        
+                      
                          }}
                 
 

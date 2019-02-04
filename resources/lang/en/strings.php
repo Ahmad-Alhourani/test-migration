@@ -34,17 +34,16 @@ return [
             'title' => 'Articles'
         ],
 
-        //start_Test_start
-        'tests' => [
-            'title' => ' Tests'
-        ],
-        //end_Test_end
-
         //start_Ahmad_start
         'ahmads' => [
             'title' => ' Ahmads'
         ],
         //end_Ahmad_end
+        //start_Test_start
+        'tests' => [
+            'title' => ' Tests'
+        ],
+        //end_Test_end
         // Do not delete me :) I'm used for auto-generation
 
         'general' => [
