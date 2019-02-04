@@ -61,7 +61,7 @@ class AhmadController extends Controller
     public function store(CreateAhmad $request)
     {
         $obj = $this->ahmadRepository->create(
-            $request->only(["name", "name5", "l_name", "email", "sms"])
+            $request->only(["name", "name7", "name5", "l_name", "email", "sms"])
         );
 
         event(new AhmadCreated($obj));
