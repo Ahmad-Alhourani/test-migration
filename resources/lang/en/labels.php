@@ -136,8 +136,34 @@ return [
                 'deleted_at' => 'Deleted At',
                 'last_updated' => 'Last Update'
             ]
-        ]
+        ],
         //end_Ahmad_end
+
+        //start_First_start
+        'firsts' => [
+            'management' => ' Firsts Management',
+            'create' => 'Create First',
+            'view' => 'View First',
+            'edit' => 'Edit First',
+
+            'table' => [
+                'id' => "Id",
+                'name' => "Name",
+                'l_name' => "Last Name",
+                'email' => "Email",
+                'des' => "Des",
+                'sms' => "SMS",
+                'sort' => 'Sort',
+                'total' => ' Firsts total| Firsts total'
+            ],
+
+            'content' => [
+                'created_at' => 'Created At',
+                'deleted_at' => 'Deleted At',
+                'last_updated' => 'Last Update'
+            ]
+        ]
+        //end_First_end
 
         // Do not delete me :) I'm used for auto-generation
     ],

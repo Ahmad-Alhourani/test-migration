@@ -49,8 +49,11 @@ return [
             'system' => 'System',
 
             //begin_Ahmad_begin
-            'ahmads' => ' Ahmads'
+            'ahmads' => ' Ahmads',
             //finish_Ahmad_finish
+            //begin_First_begin
+            'firsts' => ' Firsts'
+            //finish_First_finish
             // **********Do_Not_Delete_me****************
         ],
 
@@ -62,8 +65,19 @@ return [
             'edit' => 'Edit Ahmad',
             'management' => 'Ahmad Management',
             'main' => ' Ahmads'
-        ]
+        ],
         //end_Ahmad_end
+
+        //start_First_start
+        'firsts' => [
+            'view' => 'View First',
+            'all' => 'All  Firsts',
+            'create' => 'Create First',
+            'edit' => 'Edit First',
+            'management' => 'First Management',
+            'main' => ' Firsts'
+        ]
+        //end_First_end
 
         // Do not delete me :) I'm used for auto-generation
     ],

@@ -49,8 +49,16 @@ return [
             'saved' => 'Ahmad saved successfully.',
             'updated' => 'Ahmad updated successfully.',
             'deleted' => 'Ahmad deleted successfully.'
-        ]
+        ],
         //end_Ahmad_end
+
+        //start_First_start
+        'first' => [
+            'saved' => 'First saved successfully.',
+            'updated' => 'First updated successfully.',
+            'deleted' => 'First deleted successfully.'
+        ]
+        //end_First_end
 
         // Do not delete me :) I'm used for auto-generation
     ]

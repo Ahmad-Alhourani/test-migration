@@ -24,6 +24,12 @@
             </li>
             {{--end_Ahmad_end--}}
 
+        {{--start_First_start--}}
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/firsts')) }}" href=" {{ route('admin.first.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.firsts') }}</a>
+            </li>
+            {{--end_First_end--}}
+
 {{--Do not delete me :) I'm used for auto-generation--}}
 
             <li class="nav-title">

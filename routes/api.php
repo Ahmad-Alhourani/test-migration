@@ -21,4 +21,9 @@ Route::resource('ahmad', 'API\AhmadAPIController');
 
 //end_Ahmad_end
 
+//start_First_start
+Route::resource('first', 'API\FirstAPIController');
+
+//end_First_end
+
 //*****Do Not Delete Me
