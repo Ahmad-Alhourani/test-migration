@@ -16,11 +16,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//start_Test_start
-Route::resource('test', 'API\TestAPIController');
-
-//end_Test_end
-
 //start_Ahmad_start
 Route::resource('ahmad', 'API\AhmadAPIController');
 

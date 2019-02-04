@@ -34,12 +34,6 @@ return [
             'title' => 'Articles'
         ],
 
-        //start_Test_start
-        'tests' => [
-            'title' => ' Tests'
-        ],
-        //end_Test_end
-
         //start_Ahmad_start
         'ahmads' => [
             'title' => ' Ahmads'

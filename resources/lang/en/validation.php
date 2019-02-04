@@ -195,17 +195,6 @@ return [
                 ]
             ],
 
-            //start_Test_start
-            'tests' => [
-                'id' => "Id",
-                'name' => "Name",
-                'name5' => "Name5",
-                'l_name' => "Last Name",
-                'email' => "Email",
-                'sms' => "SMS"
-            ],
-            //end_Test_end
-
             //start_Ahmad_start
             'ahmads' => [
                 'id' => "Id",
