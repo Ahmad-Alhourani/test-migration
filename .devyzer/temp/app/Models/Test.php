@@ -8,12 +8,20 @@ use Sofa\Eloquence\Eloquence;
 use Sofa\Eloquence\Metable;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Iatstuti\Database\Support\CascadeSoftDeletes;
 use Kyslik\ColumnSortable\Sortable;
 use Storage;
 
 class Test extends Model
 {
-    use Sortable, TestAttribute, Eloquence, Metable, HasSlug;
+    use Sortable,
+        TestAttribute,
+        Eloquence,
+        Metable,
+        SoftDeletes,
+        CascadeSoftDeletes,
+        HasSlug;
 
     /**
      * Get the options for generating the slug.
@@ -42,14 +50,15 @@ class Test extends Model
 
     protected $fillable = ["name", "name5", "l_name", "email", "sms"];
 
-    public $timestamps = false;
+    public $timestamps = ["create_at", "update_at"];
 
     /**
      * The attributes that should be mutated to dates.
      *
      * @var array
      */
-    protected $dates = [];
+    protected $dates = ['deleted_at'];
+    protected $cascadeDeletes = [];
 
     /**
      * The table associated with the model.
@@ -71,6 +80,12 @@ class Test extends Model
     // ***********************************************************
     // ***********************************************************
     // ************************ RELATIONS ************************
+    // ***********************************************************
+    // ***********************************************************
+
+    // ***********************************************************
+    // ***********************************************************
+    // ************************CASCADE  RELATIONS ****************
     // ***********************************************************
     // ***********************************************************
 }
