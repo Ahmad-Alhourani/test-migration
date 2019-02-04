@@ -137,8 +137,34 @@ return [
                 'deleted_at' => 'Deleted At',
                 'last_updated' => 'Last Update'
             ]
-        ]
+        ],
         //end_Test_end
+
+        //start_Ahmad_start
+        'ahmads' => [
+            'management' => ' Ahmads Management',
+            'create' => 'Create Ahmad',
+            'view' => 'View Ahmad',
+            'edit' => 'Edit Ahmad',
+
+            'table' => [
+                'id' => "Id",
+                'name' => "Name",
+                'name5' => "Name5",
+                'l_name' => "Last Name",
+                'email' => "Email",
+                'sms' => "SMS",
+                'sort' => 'Sort',
+                'total' => ' Ahmads total| Ahmads total'
+            ],
+
+            'content' => [
+                'created_at' => 'Created At',
+                'deleted_at' => 'Deleted At',
+                'last_updated' => 'Last Update'
+            ]
+        ]
+        //end_Ahmad_end
 
         // Do not delete me :) I'm used for auto-generation
     ],
