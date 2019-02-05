@@ -75,6 +75,40 @@ Breadcrumbs::register('admin.ahmad.edit', function ($breadcrumbs, $id) {
 });
 //end_Ahmad_end
 
+//start_School_start
+Breadcrumbs::register('admin.school.index', function ($breadcrumbs) {
+    $breadcrumbs->parent('admin.dashboard');
+    $breadcrumbs->push(
+        __('strings.backend.schools.title'),
+        route('admin.school.index')
+    );
+});
+
+Breadcrumbs::register('admin.school.create', function ($breadcrumbs) {
+    $breadcrumbs->parent('admin.school.index');
+    $breadcrumbs->push(
+        __('labels.backend.schools.create'),
+        route('admin.school.create')
+    );
+});
+
+Breadcrumbs::register('admin.school.show', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admin.school.index');
+    $breadcrumbs->push(
+        __('menus.backend.schools.view'),
+        route('admin.school.show', $id)
+    );
+});
+
+Breadcrumbs::register('admin.school.edit', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admin.school.index');
+    $breadcrumbs->push(
+        __('menus.backend.schools.edit'),
+        route('admin.school.edit', $id)
+    );
+});
+//end_School_end
+
 //*****Do Not Delete Me
 
 require __DIR__ . '/auth.php';
