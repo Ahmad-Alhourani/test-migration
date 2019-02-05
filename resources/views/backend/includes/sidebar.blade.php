@@ -28,6 +28,12 @@
             </li>
             {{--end_Ahmad_end--}}
 
+        {{--start_School_start--}}
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/schools')) }}" href=" {{ route('admin.school.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.schools') }}</a>
+            </li>
+            {{--end_School_end--}}
+
 {{--Do not delete me :) I'm used for auto-generation--}}
 
             <li class="nav-title">
