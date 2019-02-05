@@ -14,5 +14,8 @@ Route::group(
          * Ahmad CRUD
          */
         Route::resource('ahmad', 'AhmadController');
+        Route::get('first/{id}/ahmads', 'AhmadController@first')->name(
+            'ahmad.first'
+        );
     }
 );
