@@ -52,8 +52,12 @@ class EventServiceProvider extends ServiceProvider
         //end_Ahmad_end
 
         //start_School_start
-        \App\Listeners\Backend\SchoolEventListener::class
+        \App\Listeners\Backend\SchoolEventListener::class,
         //end_School_end
+
+        //start_Student_start
+        \App\Listeners\Backend\StudentEventListener::class
+        //end_Student_end
 
         // Do not delete me :) I'm used for auto-generation
     ];

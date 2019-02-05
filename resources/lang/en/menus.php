@@ -56,8 +56,11 @@ return [
             'ahmads' => ' Ahmads',
             //finish_Ahmad_finish
             //begin_School_begin
-            'schools' => ' Schools'
+            'schools' => ' Schools',
             //finish_School_finish
+            //begin_Student_begin
+            'students' => ' Students'
+            //finish_Student_finish
             // **********Do_Not_Delete_me****************
         ],
 
@@ -91,8 +94,19 @@ return [
             'edit' => 'Edit School',
             'management' => 'School Management',
             'main' => ' Schools'
-        ]
+        ],
         //end_School_end
+
+        //start_Student_start
+        'students' => [
+            'view' => 'View Student',
+            'all' => 'All  Students',
+            'create' => 'Create Student',
+            'edit' => 'Edit Student',
+            'management' => 'Student Management',
+            'main' => ' Students'
+        ]
+        //end_Student_end
 
         // Do not delete me :) I'm used for auto-generation
     ],
