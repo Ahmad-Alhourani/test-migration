@@ -40,7 +40,7 @@ class Ahmad extends Model
      * @var array
      */
 
-    protected $sortable = ["id", "name", "l_name", "email"];
+    protected $sortable = ["id", "name", "first_id", "l_name", "email"];
 
     /**
      * The attributes that are mass assignable.

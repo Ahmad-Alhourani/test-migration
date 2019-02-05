@@ -150,6 +150,7 @@ return [
             'table' => [
                 'id' => "Id",
                 'name' => "Name",
+                'first_id' => "First",
                 'l_name' => "Last Name",
                 'email' => "Email",
                 'sms' => "SMS",
