@@ -19,6 +19,7 @@
         <tr>
              
                 <td>{{  $ahmad->name }}</td>  
+                <td>{!! $ahmad->first? $ahmad->first->name : 'N/A' !!}</td> 
                 <td>{{  $ahmad->l_name }}</td>  
                 <td>{{  $ahmad->email }}</td>  
                 <td>{{  $ahmad->sms }}</td>  

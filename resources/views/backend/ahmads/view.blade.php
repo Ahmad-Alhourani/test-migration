@@ -23,6 +23,15 @@
          </div><!--form-group-->
          
             <div class="form-group row">
+            {{ html()->label(__('validation.attributes.backend.ahmads.first_id'))->class('col-md-2 form-control-label')->for('first_id') }}
+            <div class="col-md-10">
+       
+           {{ $ahmad->first? $ahmad->first->name : 'N/A' }}
+
+        </div><!--col-->
+         </div><!--form-group-->
+         
+            <div class="form-group row">
             {{ html()->label(__('validation.attributes.backend.ahmads.l_name'))->class('col-md-2 form-control-label')->for('l_name') }}
             <div class="col-md-10">
        
