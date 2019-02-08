@@ -60,6 +60,7 @@ return [
             'title' => ' Companies'
         ],
         //end_Company_end
+
         //start_Branch_start
         'branches' => [
             'title' => ' Branches'
