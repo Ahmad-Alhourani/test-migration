@@ -5,7 +5,7 @@
                 
                   <th>@sortablelink('name', trans('labels.backend.branches.table.name')) </th>
                 
-                 <th>{{ __('labels.backend.branches.table.company_id') }}</th>
+                 <th>{{ __('labels.backend.branches.table.comp_id') }}</th>
                 
             <th>{{ __('labels.general.actions') }}</th>
         </tr>
