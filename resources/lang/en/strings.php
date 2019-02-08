@@ -45,6 +45,16 @@ return [
             'title' => ' Ahmads'
         ],
         //end_Ahmad_end
+        //start_School_start
+        'schools' => [
+            'title' => ' Schools'
+        ],
+        //end_School_end
+        //start_Student_start
+        'students' => [
+            'title' => ' Students'
+        ],
+        //end_Student_end
         // Do not delete me :) I'm used for auto-generation
 
         'general' => [

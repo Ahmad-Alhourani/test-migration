@@ -26,4 +26,14 @@ Route::resource('ahmad', 'API\AhmadAPIController');
 
 //end_Ahmad_end
 
+//start_School_start
+Route::resource('school', 'API\SchoolAPIController');
+
+//end_School_end
+
+//start_Student_start
+Route::resource('student', 'API\StudentAPIController');
+
+//end_Student_end
+
 //*****Do Not Delete Me

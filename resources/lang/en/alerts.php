@@ -57,8 +57,24 @@ return [
             'saved' => 'Ahmad saved successfully.',
             'updated' => 'Ahmad updated successfully.',
             'deleted' => 'Ahmad deleted successfully.'
-        ]
+        ],
         //end_Ahmad_end
+
+        //start_School_start
+        'school' => [
+            'saved' => 'School saved successfully.',
+            'updated' => 'School updated successfully.',
+            'deleted' => 'School deleted successfully.'
+        ],
+        //end_School_end
+
+        //start_Student_start
+        'student' => [
+            'saved' => 'Student saved successfully.',
+            'updated' => 'Student updated successfully.',
+            'deleted' => 'Student deleted successfully.'
+        ]
+        //end_Student_end
 
         // Do not delete me :) I'm used for auto-generation
     ]
