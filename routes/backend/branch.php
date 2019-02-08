@@ -17,8 +17,5 @@ Route::group(
         Route::get('company/{id}/branches', 'BranchController@company')->name(
             'branch.company'
         );
-        Route::get('company2/{id}/branches', 'BranchController@company2')->name(
-            'branch.company2'
-        );
     }
 );
