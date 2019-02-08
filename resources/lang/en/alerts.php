@@ -73,8 +73,16 @@ return [
             'saved' => 'Student saved successfully.',
             'updated' => 'Student updated successfully.',
             'deleted' => 'Student deleted successfully.'
-        ]
+        ],
         //end_Student_end
+
+        //start_Company_start
+        'company' => [
+            'saved' => 'Company saved successfully.',
+            'updated' => 'Company updated successfully.',
+            'deleted' => 'Company deleted successfully.'
+        ]
+        //end_Company_end
 
         // Do not delete me :) I'm used for auto-generation
     ]
