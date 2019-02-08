@@ -48,7 +48,7 @@ class Branch extends Model
      * @var array
      */
 
-    protected $fillable = ["name", "com_id"];
+    protected $fillable = ["name", "company_id"];
 
     public $timestamps = ["create_at", "update_at"];
 

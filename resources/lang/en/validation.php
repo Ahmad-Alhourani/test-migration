@@ -247,7 +247,7 @@ return [
             'branches' => [
                 'id' => "Id",
                 'name' => "Name",
-                'com_id' => "Company Name"
+                'company_id' => "Company Name"
             ]
             //end_Branch_end
             // Do not delete me :) I'm used for auto-generation
