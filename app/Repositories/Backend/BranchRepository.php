@@ -13,7 +13,7 @@ class BranchRepository extends BaseRepository implements CacheableInterface
     protected $defaultOrderBy = 'id';
     protected $defaultSortBy = 'asc';
 
-    protected $fieldSearchable = ["name", "com_id"];
+    protected $fieldSearchable = ["name", "company_id"];
 
     /**
      * Configure the Model
