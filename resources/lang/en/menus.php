@@ -62,8 +62,11 @@ return [
             'students' => ' Students',
             //finish_Student_finish
             //begin_Company_begin
-            'companies' => ' Companies'
+            'companies' => ' Companies',
             //finish_Company_finish
+            //begin_Branch_begin
+            'branches' => ' Branches'
+            //finish_Branch_finish
             // **********Do_Not_Delete_me****************
         ],
 
@@ -119,8 +122,19 @@ return [
             'edit' => 'Edit Company',
             'management' => 'Company Management',
             'main' => ' Companies'
-        ]
+        ],
         //end_Company_end
+
+        //start_Branch_start
+        'branches' => [
+            'view' => 'View Branch',
+            'all' => 'All  Branches',
+            'create' => 'Create Branch',
+            'edit' => 'Edit Branch',
+            'management' => 'Branch Management',
+            'main' => ' Branches'
+        ]
+        //end_Branch_end
 
         // Do not delete me :) I'm used for auto-generation
     ],
