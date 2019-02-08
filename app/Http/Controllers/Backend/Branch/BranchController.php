@@ -14,6 +14,8 @@ use App\Events\Backend\Branch\BranchDeleted;
 use Prettus\Repository\Criteria\RequestCriteria;
 use App\Models\Branch;
 
+use App\Models\Company;
+
 class BranchController extends Controller
 {
     /** @var $branchRepository */
@@ -47,7 +49,13 @@ class BranchController extends Controller
      */
     public function create()
     {
-        return view('backend.branches.create');
+        $companies = Company::all();
+        $selectedCompany = Company::first() ? Company::first()->_id : 0;
+
+        return view(
+            'backend.branches.create',
+            compact("companies", "selectedCompany")
+        );
     }
 
     /**
@@ -60,7 +68,9 @@ class BranchController extends Controller
      */
     public function store(CreateBranch $request)
     {
-        $obj = $this->branchRepository->create($request->only(["name"]));
+        $obj = $this->branchRepository->create(
+            $request->only(["name", "com_id"])
+        );
 
         event(new BranchCreated($obj));
         return redirect()
@@ -91,7 +101,13 @@ class BranchController extends Controller
      */
     public function edit(Branch $branch)
     {
-        return view('backend.branches.edit')->with('branch', $branch);
+        $companies = Company::all();
+        $selectedCompany = $branch->company_id;
+
+        return view(
+            'backend.branches.edit',
+            compact("companies", "selectedCompany")
+        )->with('branch', $branch);
     }
 
     /**
