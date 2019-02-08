@@ -48,7 +48,7 @@ class Branch extends Model
      * @var array
      */
 
-    protected $fillable = ["name", "company_id"];
+    protected $fillable = ["name"];
 
     public $timestamps = ["create_at", "update_at"];
 
@@ -88,15 +88,6 @@ class Branch extends Model
     // ************************ RELATIONS ************************
     // ***********************************************************
     // ***********************************************************
-
-    /**
-     * Get  the Company that owns the Branch.
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function company()
-    {
-        return $this->belongsTo(Company::class);
-    }
 
     // ***********************************************************
     // ***********************************************************

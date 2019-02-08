@@ -30,9 +30,7 @@ class CreateBranch extends FormRequest
         return [
             'id' => 'None',
 
-            'name' => 'required',
-
-            'company_id' => 'required'
+            'name' => 'required'
         ];
     }
 }
