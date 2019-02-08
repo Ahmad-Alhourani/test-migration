@@ -250,7 +250,7 @@ return [
             'table' => [
                 'id' => "Id",
                 'name' => "Name",
-                'comp_id' => "Company Name",
+                'comp1_id' => "Company Name",
                 'sort' => 'Sort',
                 'total' => ' Branches total| Branches total'
             ],

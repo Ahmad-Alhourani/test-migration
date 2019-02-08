@@ -69,7 +69,7 @@ class BranchController extends Controller
     public function store(CreateBranch $request)
     {
         $obj = $this->branchRepository->create(
-            $request->only(["name", "comp_id"])
+            $request->only(["name", "comp1_id"])
         );
 
         event(new BranchCreated($obj));
