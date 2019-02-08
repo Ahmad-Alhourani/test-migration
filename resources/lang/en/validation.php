@@ -233,8 +233,15 @@ return [
                 'l_name' => "Last Name",
                 'email' => "Email",
                 'sms' => "SMS"
-            ]
+            ],
             //end_Student_end
+            //start_Company_start
+            'companies' => [
+                'id' => "Id",
+                'name' => "Name",
+                'sms' => "SMS"
+            ]
+            //end_Company_end
             // Do not delete me :) I'm used for auto-generation
         ],
 

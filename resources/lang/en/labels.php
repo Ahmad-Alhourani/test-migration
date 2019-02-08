@@ -214,8 +214,31 @@ return [
                 'deleted_at' => 'Deleted At',
                 'last_updated' => 'Last Update'
             ]
-        ]
+        ],
         //end_Student_end
+
+        //start_Company_start
+        'companies' => [
+            'management' => ' Companies Management',
+            'create' => 'Create Company',
+            'view' => 'View Company',
+            'edit' => 'Edit Company',
+
+            'table' => [
+                'id' => "Id",
+                'name' => "Name",
+                'sms' => "SMS",
+                'sort' => 'Sort',
+                'total' => ' Companies total| Companies total'
+            ],
+
+            'content' => [
+                'created_at' => 'Created At',
+                'deleted_at' => 'Deleted At',
+                'last_updated' => 'Last Update'
+            ]
+        ]
+        //end_Company_end
 
         // Do not delete me :) I'm used for auto-generation
     ],
