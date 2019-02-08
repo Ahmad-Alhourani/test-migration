@@ -14,5 +14,8 @@ Route::group(
          * Branch CRUD
          */
         Route::resource('branch', 'BranchController');
+        Route::get('company/{id}/branches', 'BranchController@company')->name(
+            'branch.company'
+        );
     }
 );

@@ -18,6 +18,23 @@
             </div><!--col-->
         </div><!--form-group-->
         
+        <div class="form-group row">
+            {{ html()->label(__('validation.attributes.backend.branches.com_id'))->class('col-md-2 form-control-label')->for('com_id') }}
+            <div class="col-md-10">
+                
+                    <select class="form-control m-bot15" name="com_id"  required  >
+                         <option value="">select...</option>
+                        @if  ($companies->count())
+                        @foreach($companies as $temp)
+                                <option value="{{ $temp->id }}" {{ isset($branch->com_id)&& $branch->com_id == $temp->id ? 'selected="selected"' : '' }}>{{ $temp->name }}</option>
+                        @endforeach
+                        @endif
+                    </select>
+                
+
+            </div><!--col-->
+        </div><!--form-group-->
+        
 
         <!--end-columns-->
              

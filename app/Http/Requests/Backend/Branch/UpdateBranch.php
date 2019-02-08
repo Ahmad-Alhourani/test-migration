@@ -30,7 +30,9 @@ class UpdateBranch extends FormRequest
         return [
             'id' => 'None',
 
-            'name' => 'required'
+            'name' => 'required',
+
+            'com_id' => 'required'
         ];
     }
 }
