@@ -40,7 +40,7 @@ class Student extends Model
      * @var array
      */
 
-    protected $sortable = ["id", "name", "school_id", "l_name", "email"];
+    protected $sortable = ["id", "name", "l_name", "email"];
 
     /**
      * The attributes that are mass assignable.
@@ -48,7 +48,7 @@ class Student extends Model
      * @var array
      */
 
-    protected $fillable = ["name", "school_id", "l_name", "email", "sms"];
+    protected $fillable = ["name", "l_name", "email", "sms"];
 
     public $timestamps = ["create_at", "update_at"];
 
@@ -82,15 +82,6 @@ class Student extends Model
     // ************************ RELATIONS ************************
     // ***********************************************************
     // ***********************************************************
-
-    /**
-     * Get  the School that owns the Student.
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function school()
-    {
-        return $this->belongsTo(School::class);
-    }
 
     // ***********************************************************
     // ***********************************************************

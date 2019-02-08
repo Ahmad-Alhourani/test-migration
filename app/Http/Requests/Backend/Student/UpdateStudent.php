@@ -32,8 +32,6 @@ class UpdateStudent extends FormRequest
 
             'name' => 'required',
 
-            'school_id' => 'required',
-
             'l_name' => 'nullable',
 
             'email' => 'required',

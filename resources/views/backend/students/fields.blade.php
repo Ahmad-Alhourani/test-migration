@@ -19,23 +19,6 @@
         </div><!--form-group-->
         
         <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.students.school_id'))->class('col-md-2 form-control-label')->for('school_id') }}
-            <div class="col-md-10">
-                
-                    <select class="form-control m-bot15" name="school_id"  required  >
-                         <option value="">select...</option>
-                        @if  ($schools->count())
-                        @foreach($schools as $temp)
-                                <option value="{{ $temp->id }}" {{ isset($student->school_id)&& $student->school_id == $temp->id ? 'selected="selected"' : '' }}>{{ $temp->name }}</option>
-                        @endforeach
-                        @endif
-                    </select>
-                
-
-            </div><!--col-->
-        </div><!--form-group-->
-        
-        <div class="form-group row">
             {{ html()->label(__('validation.attributes.backend.students.l_name'))->class('col-md-2 form-control-label')->for('l_name') }}
             <div class="col-md-10">
                 

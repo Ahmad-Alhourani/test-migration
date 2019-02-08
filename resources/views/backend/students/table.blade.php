@@ -5,8 +5,6 @@
                 
                   <th>@sortablelink('name', trans('labels.backend.students.table.name')) </th>
                 
-                 <th>@sortablelink('school.name', trans('labels.backend.students.table.school_id')) </th>
-                
                   <th>@sortablelink('l_name', trans('labels.backend.students.table.l_name')) </th>
                 
                   <th>@sortablelink('email', trans('labels.backend.students.table.email')) </th>
@@ -21,7 +19,6 @@
         <tr>
              
                 <td>{{  $student->name }}</td>  
-                <td>{!! $student->school? $student->school->name : 'N/A' !!}</td> 
                 <td>{{  $student->l_name }}</td>  
                 <td>{{  $student->email }}</td>  
                 <td>{{  $student->sms }}</td>  

@@ -9,7 +9,6 @@ use App\Repositories\Backend\StudentRepository;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Response;
-use App\Models\School;
 
 /**
  * Class StudentAPIController

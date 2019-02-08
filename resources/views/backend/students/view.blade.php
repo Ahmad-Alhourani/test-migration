@@ -23,15 +23,6 @@
          </div><!--form-group-->
          
             <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.students.school_id'))->class('col-md-2 form-control-label')->for('school_id') }}
-            <div class="col-md-10">
-       
-           {{ $student->school? $student->school->name : 'N/A' }}
-
-        </div><!--col-->
-         </div><!--form-group-->
-         
-            <div class="form-group row">
             {{ html()->label(__('validation.attributes.backend.students.l_name'))->class('col-md-2 form-control-label')->for('l_name') }}
             <div class="col-md-10">
        

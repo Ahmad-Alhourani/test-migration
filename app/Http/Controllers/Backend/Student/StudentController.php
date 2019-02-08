@@ -14,8 +14,6 @@ use App\Events\Backend\Student\StudentDeleted;
 use Prettus\Repository\Criteria\RequestCriteria;
 use App\Models\Student;
 
-use App\Models\School;
-
 class StudentController extends Controller
 {
     /** @var $studentRepository */
@@ -49,13 +47,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        $schools = School::all();
-        $selectedSchool = School::first() ? School::first()->_id : 0;
-
-        return view(
-            'backend.students.create',
-            compact("schools", "selectedSchool")
-        );
+        return view('backend.students.create');
     }
 
     /**
@@ -69,7 +61,7 @@ class StudentController extends Controller
     public function store(CreateStudent $request)
     {
         $obj = $this->studentRepository->create(
-            $request->only(["name", "school_id", "l_name", "email", "sms"])
+            $request->only(["name", "l_name", "email", "sms"])
         );
 
         event(new StudentCreated($obj));
@@ -101,13 +93,7 @@ class StudentController extends Controller
      */
     public function edit(Student $student)
     {
-        $schools = School::all();
-        $selectedSchool = $student->school_id;
-
-        return view(
-            'backend.students.edit',
-            compact("schools", "selectedSchool")
-        )->with('student', $student);
+        return view('backend.students.edit')->with('student', $student);
     }
 
     /**

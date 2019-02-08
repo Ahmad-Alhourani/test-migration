@@ -34,6 +34,8 @@
             </li>
             {{--end_School_end--}}
 
+        
+
         {{--start_Student_start--}}
             <li class="nav-item">
                 <a class="nav-link {{ active_class(Active::checkUriPattern('admin/students')) }}" href=" {{ route('admin.student.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.students') }}</a>

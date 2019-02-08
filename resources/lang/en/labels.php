@@ -201,7 +201,6 @@ return [
             'table' => [
                 'id' => "Id",
                 'name' => "Name",
-                'school_id' => "School",
                 'l_name' => "Last Name",
                 'email' => "Email",
                 'sms' => "SMS",

@@ -225,11 +225,11 @@ return [
                 'sms' => "SMS"
             ],
             //end_School_end
+
             //start_Student_start
             'students' => [
                 'id' => "Id",
                 'name' => "Name",
-                'school_id' => "School",
                 'l_name' => "Last Name",
                 'email' => "Email",
                 'sms' => "SMS"

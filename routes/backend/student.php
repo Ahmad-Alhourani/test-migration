@@ -14,8 +14,5 @@ Route::group(
          * Student CRUD
          */
         Route::resource('student', 'StudentController');
-        Route::get('school/{id}/students', 'StudentController@school')->name(
-            'student.school'
-        );
     }
 );
