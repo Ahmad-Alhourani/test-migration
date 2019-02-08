@@ -32,7 +32,7 @@ class CreateBranch extends FormRequest
 
             'name' => 'required',
 
-            'comp_id' => 'required'
+            'comp1_id' => 'required'
         ];
     }
 }
