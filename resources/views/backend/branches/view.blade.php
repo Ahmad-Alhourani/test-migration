@@ -23,7 +23,7 @@
          </div><!--form-group-->
          
             <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.branches.company_id'))->class('col-md-2 form-control-label')->for('company_id') }}
+            {{ html()->label(__('validation.attributes.backend.branches.comp_id'))->class('col-md-2 form-control-label')->for('comp_id') }}
             <div class="col-md-10">
        
            {{ $branch->company? $branch->company->name : 'N/A' }}
