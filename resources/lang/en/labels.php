@@ -188,8 +188,34 @@ return [
                 'deleted_at' => 'Deleted At',
                 'last_updated' => 'Last Update'
             ]
-        ]
+        ],
         //end_School_end
+
+        //start_Student_start
+        'students' => [
+            'management' => ' Students Management',
+            'create' => 'Create Student',
+            'view' => 'View Student',
+            'edit' => 'Edit Student',
+
+            'table' => [
+                'id' => "Id",
+                'name' => "Name",
+                'school_id' => "School",
+                'l_name' => "Last Name",
+                'email' => "Email",
+                'sms' => "SMS",
+                'sort' => 'Sort',
+                'total' => ' Students total| Students total'
+            ],
+
+            'content' => [
+                'created_at' => 'Created At',
+                'deleted_at' => 'Deleted At',
+                'last_updated' => 'Last Update'
+            ]
+        ]
+        //end_Student_end
 
         // Do not delete me :) I'm used for auto-generation
     ],

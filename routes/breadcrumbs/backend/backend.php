@@ -109,6 +109,40 @@ Breadcrumbs::register('admin.school.edit', function ($breadcrumbs, $id) {
 });
 //end_School_end
 
+//start_Student_start
+Breadcrumbs::register('admin.student.index', function ($breadcrumbs) {
+    $breadcrumbs->parent('admin.dashboard');
+    $breadcrumbs->push(
+        __('strings.backend.students.title'),
+        route('admin.student.index')
+    );
+});
+
+Breadcrumbs::register('admin.student.create', function ($breadcrumbs) {
+    $breadcrumbs->parent('admin.student.index');
+    $breadcrumbs->push(
+        __('labels.backend.students.create'),
+        route('admin.student.create')
+    );
+});
+
+Breadcrumbs::register('admin.student.show', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admin.student.index');
+    $breadcrumbs->push(
+        __('menus.backend.students.view'),
+        route('admin.student.show', $id)
+    );
+});
+
+Breadcrumbs::register('admin.student.edit', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admin.student.index');
+    $breadcrumbs->push(
+        __('menus.backend.students.edit'),
+        route('admin.student.edit', $id)
+    );
+});
+//end_Student_end
+
 //*****Do Not Delete Me
 
 require __DIR__ . '/auth.php';
