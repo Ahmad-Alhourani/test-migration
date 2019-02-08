@@ -48,7 +48,7 @@ class Branch extends Model
      * @var array
      */
 
-    protected $fillable = ["name", "comp_id"];
+    protected $fillable = ["name", "comp1_id"];
 
     public $timestamps = ["create_at", "update_at"];
 
@@ -89,7 +89,7 @@ class Branch extends Model
      */
     public function company()
     {
-        return $this->belongsTo(Company::class);
+        return $this->belongsTo(Company::class, 'comp1_id');
     }
 
     // ***********************************************************

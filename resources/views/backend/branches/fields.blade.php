@@ -19,14 +19,14 @@
         </div><!--form-group-->
         
         <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.branches.comp_id'))->class('col-md-2 form-control-label')->for('comp_id') }}
+            {{ html()->label(__('validation.attributes.backend.branches.comp1_id'))->class('col-md-2 form-control-label')->for('comp1_id') }}
             <div class="col-md-10">
                 
-                    <select class="form-control m-bot15" name="comp_id"  required  >
+                    <select class="form-control m-bot15" name="comp1_id"  required  >
                          <option value="">select...</option>
                         @if  ($companies->count())
                         @foreach($companies as $temp)
-                                <option value="{{ $temp->id }}" {{ isset($branch->comp_id)&& $branch->comp_id == $temp->id ? 'selected="selected"' : '' }}>{{ $temp->name }}</option>
+                                <option value="{{ $temp->id }}" {{ isset($branch->comp1_id)&& $branch->comp1_id == $temp->id ? 'selected="selected"' : '' }}>{{ $temp->name }}</option>
                         @endforeach
                         @endif
                     </select>
