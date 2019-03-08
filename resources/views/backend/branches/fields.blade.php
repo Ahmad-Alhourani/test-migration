@@ -19,31 +19,14 @@
         </div><!--form-group-->
         
         <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.branches.comp0_id'))->class('col-md-2 form-control-label')->for('comp0_id') }}
+            {{ html()->label(__('validation.attributes.backend.branches.company_id'))->class('col-md-2 form-control-label')->for('company_id') }}
             <div class="col-md-10">
                 
-                    <select class="form-control m-bot15" name="comp0_id"  required  >
+                    <select class="form-control m-bot15" name="company_id"  required  >
                          <option value="">select...</option>
                         @if  ($companies->count())
                         @foreach($companies as $temp)
-                                <option value="{{ $temp->id }}" {{ isset($branch->comp0_id)&& $branch->comp0_id == $temp->id ? 'selected="selected"' : '' }}>{{ $temp->name }}</option>
-                        @endforeach
-                        @endif
-                    </select>
-                
-
-            </div><!--col-->
-        </div><!--form-group-->
-        
-        <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.branches.comp2_id'))->class('col-md-2 form-control-label')->for('comp2_id') }}
-            <div class="col-md-10">
-                
-                    <select class="form-control m-bot15" name="comp2_id"  required  >
-                         <option value="">select...</option>
-                        @if  ($companies->count())
-                        @foreach($companies as $temp)
-                                <option value="{{ $temp->id }}" {{ isset($branch->comp2_id)&& $branch->comp2_id == $temp->id ? 'selected="selected"' : '' }}>{{ $temp->name }}</option>
+                                <option value="{{ $temp->id }}" {{ isset($branch->company_id)&& $branch->company_id == $temp->id ? 'selected="selected"' : '' }}>{{ $temp->name }}</option>
                         @endforeach
                         @endif
                     </select>

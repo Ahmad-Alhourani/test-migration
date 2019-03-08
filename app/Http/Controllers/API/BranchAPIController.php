@@ -10,7 +10,6 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Response;
 use App\Models\Company;
-use App\Models\Company;
 
 /**
  * Class BranchAPIController

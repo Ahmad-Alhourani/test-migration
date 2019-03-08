@@ -59,13 +59,13 @@ class EventServiceProvider extends ServiceProvider
         \App\Listeners\Backend\StudentEventListener::class,
         //end_Student_end
 
-        //start_Branch_start
-        \App\Listeners\Backend\BranchEventListener::class,
-        //end_Branch_end
-
         //start_Company_start
-        \App\Listeners\Backend\CompanyEventListener::class
+        \App\Listeners\Backend\CompanyEventListener::class,
         //end_Company_end
+
+        //start_Branch_start
+        \App\Listeners\Backend\BranchEventListener::class
+        //end_Branch_end
 
         // Do not delete me :) I'm used for auto-generation
     ];

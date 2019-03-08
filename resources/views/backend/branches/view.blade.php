@@ -3,7 +3,7 @@
 
        
             <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.branches.id'))->class('col-md-2 form-control-label')->for('id') }}
+            {{ html()->label(__('labels.backend.branches.table.id'))->class('col-md-2 form-control-label')->for('id') }}
             <div class="col-md-10">
        
 
@@ -13,7 +13,7 @@
          </div><!--form-group-->
          
             <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.branches.name'))->class('col-md-2 form-control-label')->for('name') }}
+            {{ html()->label(__('labels.backend.branches.table.name'))->class('col-md-2 form-control-label')->for('name') }}
             <div class="col-md-10">
        
 
@@ -23,19 +23,10 @@
          </div><!--form-group-->
          
             <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.branches.comp0_id'))->class('col-md-2 form-control-label')->for('comp0_id') }}
+            {{ html()->label(__('labels.backend.branches.table.company_id'))->class('col-md-2 form-control-label')->for('company_id') }}
             <div class="col-md-10">
        
            {{ $branch->company? $branch->company->name : 'N/A' }}
-
-        </div><!--col-->
-         </div><!--form-group-->
-         
-            <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.branches.comp2_id'))->class('col-md-2 form-control-label')->for('comp2_id') }}
-            <div class="col-md-10">
-       
-           {{ $branch->company2? $branch->company2->name : 'N/A' }}
 
         </div><!--col-->
          </div><!--form-group-->

@@ -143,40 +143,6 @@ Breadcrumbs::register('admin.student.edit', function ($breadcrumbs, $id) {
 });
 //end_Student_end
 
-//start_Branch_start
-Breadcrumbs::register('admin.branch.index', function ($breadcrumbs) {
-    $breadcrumbs->parent('admin.dashboard');
-    $breadcrumbs->push(
-        __('strings.backend.branches.title'),
-        route('admin.branch.index')
-    );
-});
-
-Breadcrumbs::register('admin.branch.create', function ($breadcrumbs) {
-    $breadcrumbs->parent('admin.branch.index');
-    $breadcrumbs->push(
-        __('labels.backend.branches.create'),
-        route('admin.branch.create')
-    );
-});
-
-Breadcrumbs::register('admin.branch.show', function ($breadcrumbs, $id) {
-    $breadcrumbs->parent('admin.branch.index');
-    $breadcrumbs->push(
-        __('menus.backend.branches.view'),
-        route('admin.branch.show', $id)
-    );
-});
-
-Breadcrumbs::register('admin.branch.edit', function ($breadcrumbs, $id) {
-    $breadcrumbs->parent('admin.branch.index');
-    $breadcrumbs->push(
-        __('menus.backend.branches.edit'),
-        route('admin.branch.edit', $id)
-    );
-});
-//end_Branch_end
-
 //start_Company_start
 Breadcrumbs::register('admin.company.index', function ($breadcrumbs) {
     $breadcrumbs->parent('admin.dashboard');
@@ -210,6 +176,40 @@ Breadcrumbs::register('admin.company.edit', function ($breadcrumbs, $id) {
     );
 });
 //end_Company_end
+
+//start_Branch_start
+Breadcrumbs::register('admin.branch.index', function ($breadcrumbs) {
+    $breadcrumbs->parent('admin.dashboard');
+    $breadcrumbs->push(
+        __('strings.backend.branches.title'),
+        route('admin.branch.index')
+    );
+});
+
+Breadcrumbs::register('admin.branch.create', function ($breadcrumbs) {
+    $breadcrumbs->parent('admin.branch.index');
+    $breadcrumbs->push(
+        __('labels.backend.branches.create'),
+        route('admin.branch.create')
+    );
+});
+
+Breadcrumbs::register('admin.branch.show', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admin.branch.index');
+    $breadcrumbs->push(
+        __('menus.backend.branches.view'),
+        route('admin.branch.show', $id)
+    );
+});
+
+Breadcrumbs::register('admin.branch.edit', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admin.branch.index');
+    $breadcrumbs->push(
+        __('menus.backend.branches.edit'),
+        route('admin.branch.edit', $id)
+    );
+});
+//end_Branch_end
 
 //*****Do Not Delete Me
 

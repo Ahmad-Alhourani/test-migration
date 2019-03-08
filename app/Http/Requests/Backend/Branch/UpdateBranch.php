@@ -32,9 +32,7 @@ class UpdateBranch extends FormRequest
 
             'name' => 'required',
 
-            'comp0_id' => 'required',
-
-            'comp2_id' => 'required'
+            'company_id' => 'required'
         ];
     }
 }

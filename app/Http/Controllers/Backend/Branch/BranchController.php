@@ -52,18 +52,9 @@ class BranchController extends Controller
         $companies = Company::all();
         $selectedCompany = Company::first() ? Company::first()->_id : 0;
 
-        $companies = Company::all();
-        $selectedCompany = Company::first() ? Company::first()->_id : 0;
-
         return view(
             'backend.branches.create',
-            compact(
-                "companies",
-                "selectedCompany",
-
-                "companies",
-                "selectedCompany"
-            )
+            compact("companies", "selectedCompany")
         );
     }
 
@@ -78,7 +69,7 @@ class BranchController extends Controller
     public function store(CreateBranch $request)
     {
         $obj = $this->branchRepository->create(
-            $request->only(["name", "comp0_id", "comp2_id"])
+            $request->only(["name", "company_id"])
         );
 
         event(new BranchCreated($obj));
@@ -113,17 +104,9 @@ class BranchController extends Controller
         $companies = Company::all();
         $selectedCompany = $branch->company_id;
 
-        $companies = Company::all();
-        $selectedCompany = $branch->company2_id;
-
         return view(
             'backend.branches.edit',
-            compact(
-                "companies",
-                "selectedCompany",
-                "companies",
-                "selectedCompany"
-            )
+            compact("companies", "selectedCompany")
         )->with('branch', $branch);
     }
 
