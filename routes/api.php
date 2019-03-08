@@ -36,14 +36,14 @@ Route::resource('student', 'API\StudentAPIController');
 
 //end_Student_end
 
-//start_Company_start
-Route::resource('company', 'API\CompanyAPIController');
-
-//end_Company_end
-
 //start_Branch_start
 Route::resource('branch', 'API\BranchAPIController');
 
 //end_Branch_end
+
+//start_Company_start
+Route::resource('company', 'API\CompanyAPIController');
+
+//end_Company_end
 
 //*****Do Not Delete Me

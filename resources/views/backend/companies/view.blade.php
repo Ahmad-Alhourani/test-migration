@@ -3,7 +3,7 @@
 
        
             <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.companies.id'))->class('col-md-2 form-control-label')->for('id') }}
+            {{ html()->label(__('labels.backend.companies.table.id'))->class('col-md-2 form-control-label')->for('id') }}
             <div class="col-md-10">
        
 
@@ -13,7 +13,7 @@
          </div><!--form-group-->
          
             <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.companies.name'))->class('col-md-2 form-control-label')->for('name') }}
+            {{ html()->label(__('labels.backend.companies.table.name'))->class('col-md-2 form-control-label')->for('name') }}
             <div class="col-md-10">
        
 
@@ -23,7 +23,7 @@
          </div><!--form-group-->
          
             <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.companies.sms'))->class('col-md-2 form-control-label')->for('sms') }}
+            {{ html()->label(__('labels.backend.companies.table.sms'))->class('col-md-2 form-control-label')->for('sms') }}
             <div class="col-md-10">
        
 

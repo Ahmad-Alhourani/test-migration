@@ -235,13 +235,6 @@ return [
                 'sms' => "SMS"
             ],
             //end_Student_end
-            //start_Company_start
-            'companies' => [
-                'id' => "Id",
-                'name' => "Name",
-                'sms' => "SMS"
-            ],
-            //end_Company_end
 
             //start_Branch_start
             'branches' => [
@@ -249,8 +242,15 @@ return [
                 'name' => "Name",
                 'comp0_id' => "Company Name",
                 'comp2_id' => "Company Name"
-            ]
+            ],
             //end_Branch_end
+            //start_Company_start
+            'companies' => [
+                'id' => "Id",
+                'name' => "Name",
+                'sms' => "SMS"
+            ]
+            //end_Company_end
             // Do not delete me :) I'm used for auto-generation
         ],
 
